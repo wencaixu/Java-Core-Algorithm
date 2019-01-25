@@ -39,4 +39,15 @@ public class SortUtils {
         }
         return true;
     }
+
+    /**
+     * tranverse
+     *
+     * @param A
+     */
+    public void trav(Comparable[] A) {
+        for (int i = 0; i < A.length; i++) {
+            System.out.print(A[i] + " ");
+        }
+    }
 }
