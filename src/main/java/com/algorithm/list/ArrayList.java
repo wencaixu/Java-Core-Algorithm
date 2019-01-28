@@ -113,7 +113,5 @@ public class ArrayList<I extends Number> {
         System.out.println(link.isEmpty(link));
         System.out.println("清空");
         link.traverse(link);
-
-
     }
 }
