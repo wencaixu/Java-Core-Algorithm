@@ -1,4 +1,4 @@
 package com.cryptology;
 
-public class Test {
+public class R {
 }
