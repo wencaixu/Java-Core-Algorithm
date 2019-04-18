@@ -30,7 +30,7 @@ public class ArrayList<I extends Number> {
             elem[i - 1] = elem[i];
         }
         this.listSize--;
-        //处理结束后修改数组长度,处理数组长度缩小
+
         if (this.listSize <= this.capacity / 2) {
             this.elem = Arrays.copyOf(this.elem, this.capacity / 2);
             this.capacity = this.capacity / 2;
@@ -100,7 +100,7 @@ public class ArrayList<I extends Number> {
     }
 
     public static void main(String[] args) {
-        ArrayList<Number> link = new ArrayList<Number>(6);
+        ArrayList<Number> link = new ArrayList<>(6);
         link.traverse(link);
         link.insert(1, 2);
         link.insert(2, 3);
