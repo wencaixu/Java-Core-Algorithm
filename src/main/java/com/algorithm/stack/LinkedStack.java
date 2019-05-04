@@ -1,8 +1,6 @@
 package com.algorithm.stack;
 
 
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
-
 public class LinkedStack<T> {
 
     /**
