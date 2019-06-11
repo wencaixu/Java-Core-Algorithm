@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CMS-master:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/CMS_master_war</output-path>
+    <root id="archive" name="CMS-master_war.war">
+      <element id="artifact" artifact-name="CMS-master:war exploded" />
+    </root>
+  </artifact>
+</component>

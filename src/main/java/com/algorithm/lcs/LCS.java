@@ -1,4 +1,4 @@
-package com.lcs;
+package com.algorithm.lcs;
 
 import java.util.Arrays;
 
