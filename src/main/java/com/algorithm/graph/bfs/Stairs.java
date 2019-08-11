@@ -83,7 +83,7 @@ public class Stairs {
 
                         if(A[x1][y1] == '-'){
                             V[x1][y1] = 0;
-                            if((i > 1 && step % 2 == 0) || (i <= 1 && step % 2 == 1)){
+                            if((i > 1 && step % 2 == 1) || (i <= 1 && step % 2 == 0)){
                                 x1 = poll.x + DX[i];
                                 y1 = poll.y + DY[i];
                                 if(V[x1][y1] == 1)
@@ -95,7 +95,6 @@ public class Stairs {
                                 y1 = poll.y;
                             }
                         }
-
                         if(x1 == ex && y1 == ey){
                             System.out.printf("%d",step);
                             return;

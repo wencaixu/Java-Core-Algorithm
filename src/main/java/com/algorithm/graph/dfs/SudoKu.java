@@ -63,7 +63,6 @@ public class SudoKu {
                 }
             }
 
-
             for (int i = 0; i < 9; i++)
                 for (int j = 0; j < 9; j++) {
                     if (a[i][j] != 0) {

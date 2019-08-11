@@ -8,6 +8,11 @@ class Node<T> {
 
 public class LinkedList<I extends Number> {
 
+    /**
+     * 初始化
+     * @param header
+     * @return
+     */
     public Node init(Node header) {
         header = new Node();
         header.date = 0;
@@ -15,6 +20,11 @@ public class LinkedList<I extends Number> {
         return header;
     }
 
+    /**
+     * 链表长度
+     * @param header
+     * @return
+     */
     public int size(Node header) {
         Node TMP = header.nextNode;
         int counter = 0;
@@ -25,6 +35,10 @@ public class LinkedList<I extends Number> {
         return counter;
     }
 
+    /**
+     * 链表遍历
+     * @param header
+     */
     public void traverse(Node header) {
         int i = 0;
         Node TMP = header.nextNode;
@@ -37,6 +51,13 @@ public class LinkedList<I extends Number> {
         System.out.println();
     }
 
+    /**
+     * 插入数据
+     * @param header
+     * @param index
+     * @param date
+     * @throws Exception
+     */
     public void insert(Node header, int index, int date) throws Exception {
         if (index < 0) {
             throw new Exception("Index is unformatted");
@@ -52,6 +73,12 @@ public class LinkedList<I extends Number> {
         header.nextNode = newNode;
     }
 
+    /**
+     * 删除数据
+     * @param header
+     * @param index
+     * @throws Exception
+     */
     public void delete(Node header, int index) throws Exception {
         if (index < 0 || index > size(header)) {
             throw new Exception("Index is overflow");
@@ -76,7 +103,9 @@ public class LinkedList<I extends Number> {
             rk--;
             TMP = TMP.nextNode;
         }
-        if (rk > 0) return;
+        if (rk > 0) {
+            return;
+        }
         if (rk == 0) {
             header = header.nextNode;
         }
@@ -190,6 +219,22 @@ public class LinkedList<I extends Number> {
         }
     }
 
+    /**
+     * 单链表反转
+     * @param head
+     * @return
+     */
+    public Node reverse(Node head){
+        Node prep = null;
+        Node next = null;
+        while(head != null){
+            next = head.nextNode;
+            head.nextNode = prep;
+            prep = head;
+            head = next;
+        }
+        return prep;
+    }
 
     public static void main(String[] args) throws Exception {
         Node n = null;
@@ -201,6 +246,11 @@ public class LinkedList<I extends Number> {
         numberLinkedList.insert(init, 1, 2);
         numberLinkedList.insert(init, 2, 3);
         numberLinkedList.insert(init, 3, 5);
+
+        //链表反转
+        Node reverse = numberLinkedList.reverse(init);
+        //反转输出
+        numberLinkedList.traverse(reverse);
 
         Node init2 = numberLinkedList.init(n1);
         numberLinkedList.insert(init2, 0, 2);
@@ -218,6 +268,8 @@ public class LinkedList<I extends Number> {
         //numberLinkedList.delete(init,2);
         //numberLinkedList.traverse(init);
         //System.out.println(numberLinkedList.get(init,2));
+
+
     }
 
 }
