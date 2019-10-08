@@ -5,6 +5,9 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
 
+/**
+ * @author Jerry
+ */
 public class BFSOil {
 
     static class Node {
