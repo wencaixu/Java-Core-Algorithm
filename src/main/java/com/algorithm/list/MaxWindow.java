@@ -14,17 +14,24 @@ public class MaxWindow {
         if (arr == null || w < 1 || arr.length < w) {
             return null;
         }
+        //qmax维护一个递增的队列，存储数组元素的下标
         Deque<Integer> qmax = new LinkedList<>();
+        //存储生成窗口的最大值数字
         int[] res = new int[arr.length - w + 1];
         int index = 0;
+        //因为对数组最多遍历arr.length次
         for (int i = 0; i < arr.length; i++) {
+            //维护最大值队列最大队列如果小于新加的元素，则移除最后一个元素
             while (!qmax.isEmpty() && arr[qmax.peekLast()] <= arr[i]) {
                 qmax.pollLast();
             }
+            //添加索引
             qmax.addLast(i);
+            //判断qmax最前元素是否过期
             if (qmax.peekFirst() == i - w) {
                 qmax.pollFirst();
             }
+            //每次都会执行一次，取出最大值
             if (i >= w - 1) {
                 res[index++] = arr[qmax.peekFirst()];
             }
