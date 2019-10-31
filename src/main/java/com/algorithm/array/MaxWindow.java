@@ -1,4 +1,4 @@
-package com.algorithm.list;
+package com.algorithm.array;
 
 import java.util.Deque;
 import java.util.LinkedList;

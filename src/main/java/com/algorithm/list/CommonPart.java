@@ -2,9 +2,7 @@ package com.algorithm.list;
 
 
 import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 class ListNode<T>{
     T date;

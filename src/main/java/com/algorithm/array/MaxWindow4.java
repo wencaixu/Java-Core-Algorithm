@@ -1,6 +1,5 @@
-package com.algorithm.list;
+package com.algorithm.array;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 
 /**
