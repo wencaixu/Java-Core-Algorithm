@@ -51,7 +51,9 @@ public class BinaryTreeNoRecursion<Key extends Comparable<Key>, Value> {
     }
 
     private int size(Node root) {
-        if (root == null) return 0;
+        if (root == null) {
+            return 0;
+        }
         return root.N;
     }
 
