@@ -143,11 +143,11 @@ public class TransverseTree {
             return;
         }
         Queue<TreeBNode> queue1 = new LinkedTransferQueue<>();
-        Queue<TreeBNode> queue2 = new LinkedTransferQueue<>();
+        //Queue<TreeBNode> queue2 = new LinkedTransferQueue<>();
         queue1.add(header);
         while(!queue1.isEmpty()){
             TreeBNode node = queue1.poll();
-            queue2.add(node);
+            System.out.println(node.value+" ");
             if(node.left != null){
                 queue1.add(node.left);
             }
@@ -155,10 +155,10 @@ public class TransverseTree {
                 queue1.add(node.right);
             }
         }
-        while(!queue2.isEmpty()){
+       /* while(!queue2.isEmpty()){
             TreeBNode node = queue2.poll();
             System.out.println(node.value);
-        }
+        }*/
     }
 
     public static void main(String[] args) {
@@ -167,6 +167,7 @@ public class TransverseTree {
         root.right = new TreeBNode(12);
         root.left.left = new TreeBNode(13);
         root.left.right = new TreeBNode(14);
+        root.left.right.right = new TreeBNode(15);
 
         new TransverseTree().layerOrderTran(root);
     }

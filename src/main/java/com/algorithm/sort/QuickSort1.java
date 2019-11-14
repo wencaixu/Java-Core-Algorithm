@@ -1,7 +1,5 @@
 package com.algorithm.sort;
 
-import java.util.Random;
-
 public class QuickSort1 {
 
     //基准取头法
