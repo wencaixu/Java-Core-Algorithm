@@ -111,5 +111,4 @@ public class SerializeTree {
         root.right = new SerializeTreeNode(3);
         SerializeTreeNode node = reconLayerTree(serializeByLayer(root));
     }
-
 }
