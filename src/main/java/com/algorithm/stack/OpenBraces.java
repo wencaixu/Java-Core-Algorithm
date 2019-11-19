@@ -1,9 +1,12 @@
-package com.algorithm;
+package com.algorithm.stack;
 
 
 import java.util.Stack;
 
-public class Main {
+/**
+ * 括弧展开算法
+ */
+public class OpenBraces {
 
     public static void main(String[] args) {
         String s = "ab2(cd)ef3(gh2(mn))xyz";

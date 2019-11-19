@@ -161,6 +161,10 @@ public class TransverseTree {
         }*/
     }
 
+    //Mirrors遍历算法，时间复杂度为O(1)
+
+
+
     public static void main(String[] args) {
         TreeBNode root = new TreeBNode(10);
         root.left = new TreeBNode(11);
