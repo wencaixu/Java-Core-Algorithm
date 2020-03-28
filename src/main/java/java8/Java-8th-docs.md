@@ -14,5 +14,7 @@
 |  操作  |  类型 |  作用 |
 |  ---- | ---- | ---- |
 |  forEach  | 终端操作 |  消费遍历集合的每一个元素，消费过程中可以使用lambda表达式 |
-|  collect  | 终端操作 |  将流式集合Stream<T> 转换成 List或Set等，如Collectors类的toList静态方法 | 
-|  count  | 终端操作 |  返回数量，数据类型为long类型 | 
+|  collect  | 终端操作 |  将流式集合Stream<T> 转换成 List或Set等，如Collectors类的toList静态方法 |
+|  count  | 终端操作 |  返回数量，数据类型为long类型 |
+
+## 6、用流收集数据
