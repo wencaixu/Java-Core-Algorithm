@@ -24,8 +24,8 @@
 ## Java Programmer's Linux Command
 
 *  [awk](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/awk-guides.md)
-*  [cut - Pending]()
-*  [sed - Pending]()
+*  [sed](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/sed-guides.md)
+*  [cut]()
 *  [find - Pending]()
 *  [grep - Pending]()
 
