@@ -4,6 +4,9 @@
 
 * [Keywords final]()
 
+## Alibaba Java Coding Guidelines
+
+
 ## Algorithm & Date Structure
 
 * [Data Structure]()
@@ -11,7 +14,7 @@
 
 ## Java 8th Learning
 
-*	[Java 8th Summary Doc](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/main/java/java8/Java-8th-docs.md)
+*	[Java 8th Summary Doc](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Doc/java8/Java-8th-docs.md)
 
 ## Java Junit & JMockit
 
@@ -20,7 +23,7 @@
 
 ## Java Programmer's Linux Command
 
-*  [awk - Pending]()
+*  [awk](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/awk-guides.md)
 *  [cut - Pending]()
 *  [sed - Pending]()
 *  [find - Pending]()
@@ -34,3 +37,5 @@
 
 * [BIO]()
 * [NIO]()
+
+## WeChat Official Accounts
