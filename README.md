@@ -50,6 +50,6 @@
 
 ## WeChat Official Accounts
 <div align="center">
-	<img src="https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/main/java/com/tools/profile.jpg" width="200px" height="100px">
+	<img src="https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/main/java/com/tools/profile.jpg" width="200px" height="200px">
 </div>
 
