@@ -31,12 +31,13 @@
 *   [JMockit](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Doc/JMockit/jmockit-doc.md)
 
 ## Java Programmer's Linux Command
-
-*  [awk](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/awk-guides.md)
-*  [sed](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/sed-guides.md)
-*  [cut](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/cut-guides.md)
-*  [find](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/find-guides.md)
-*  [grep](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/grep-guides.md)
+* Regex
+* Command
+  - [awk](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/awk-guides.md)
+  - [sed](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/sed-guides.md)
+  - [cut](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/cut-guides.md)
+  - [find](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/find-guides.md)
+  - [grep](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/grep-guides.md)
 
 ## The art of multithreading
 
