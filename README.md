@@ -7,6 +7,15 @@
 ## Alibaba Java Coding Guidelines
 
 
+
+## Operation System
+
+* [Memory](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/operation/operation-memory.md)
+
+## Computer Network 
+
+* [HTTP](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/network/network-http.md)
+
 ## Algorithm & Date Structure
 
 * [Data Structure]()
@@ -18,35 +27,44 @@
 
 ## Java Junit & JMockit
 
-*   [Junit Summary - Pending]()
-*   [JMockit Summary - Pending]()
+*   [Junit Doc](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Doc/Junit/junit-doc.md.md)
+*   [JMockit](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Doc/JMockit/jmockit-doc.md)
 
 ## Java Programmer's Linux Command
 
 *  [awk](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/awk-guides.md)
 *  [sed](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/sed-guides.md)
-*  [cut]()
-*  [find - Pending]()
-*  [grep - Pending]()
+*  [cut](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/cut-guides.md)
+*  [find](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/find-guides.md)
+*  [grep](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/grep-guides.md)
 
 ## The art of multithreading
 
-* [Fork & Join - Pending]()
+* [Fork & Join](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/thread/Fork-Join.md)
 
 ## Java IO,NIO,BIO.etc
 
-* [BIO]()
-* [NIO]()
-
+* [BIO](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/io/BIO/Fork-Join.md)
+  
+* [NIO]
+    - [Buffer](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/io/NIO/buffer-http.md)
+    - [Channels](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/io/NIO/channels-http.md)
+    - [Selector](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/io/NIO/selector-http.md)
 ## Framework
-* [Spring]()
+* [Spring Bean](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Doc/spring/spring-bean-guides.md)
 ## Cache(Redis)
-* [Redis 5 basic types]()
+* [Redis 5 basic types](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/redis/redis-basic-types.md)
 ## Database(MySQL)
-* [MySQL transaction ]()
+* [MySQL transaction ](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/io/mysql/MySQL-transaction.md)
 
 ## Distributed Technology
-* [Redis cluster]()
+* [Redis cluster](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/io/distribute/redis-claster.md)
+
+## Code Version Control
+
+* [Git]()
+
+* [Github]()
 
 ## WeChat Official Accounts
 <div align="center">
