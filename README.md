@@ -61,7 +61,7 @@
 
 ## Code Version Control
 
-* [Git](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/git/git-commonly-commands.md)
+* [Git](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/git/git-basic-operation.md)
 
 * [Github]()
 
