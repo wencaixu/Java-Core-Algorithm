@@ -6,8 +6,6 @@
 
 ## Alibaba Java Coding Guidelines
 
-
-
 ## Operation System
 
 * [Memory](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/operation/operation-memory.md)
@@ -63,7 +61,7 @@
 
 ## Code Version Control
 
-* [Git]()
+* [Git](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/git/git-commonly-commands.md)
 
 * [Github]()
 
