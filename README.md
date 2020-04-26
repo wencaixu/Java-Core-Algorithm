@@ -29,7 +29,7 @@
 *   [JMockit](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Doc/JMockit/jmockit-doc.md)
 
 ## Java Programmer's Linux Command
-* Regex
+* [Regex](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/regex-guides.md)
 * Command
   - [awk](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/awk-guides.md)
   - [sed](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/unix/sed-guides.md)
