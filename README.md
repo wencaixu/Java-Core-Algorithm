@@ -60,10 +60,8 @@
 * [Redis cluster](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/core/io/distribute/redis-claster.md)
 
 ## Code Version Control
-
+D:\ideaProject\Java-Core-Algorithm\src\docs\Guides\git\git-basic-operation.md
 * [Git](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/git/git-basic-operation.md)
-
-* [Github]()
 
 ## WeChat Official Accounts
 <div align="center">

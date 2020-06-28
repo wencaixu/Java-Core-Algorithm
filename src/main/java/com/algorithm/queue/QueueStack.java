@@ -42,5 +42,8 @@ public class QueueStack {
             stack.push(2);
             System.out.println(stack.pop());
             System.out.println(stack.pop());
+        System.out.println(
+                Integer.MAX_VALUE+" "+Integer.MIN_VALUE
+        );
     }
 }
