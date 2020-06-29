@@ -1,11 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õå“øúÿÿÿÿ
->
-java:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(åå‘Ş
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(ò€±İúÿÿÿÿ
-N	java:S106'"9Replace this use of System.out or System.err by a logger.(ö›ú
-C
-java:S1481"(Remove this unused "sum" local variable.(‰á¥Äÿÿÿÿÿ
-F
-java:S1481"0Remove this unused "uniqueWords" local variable.(±‘£Š
