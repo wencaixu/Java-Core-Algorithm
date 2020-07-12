@@ -63,8 +63,20 @@
 D:\ideaProject\Java-Core-Algorithm\src\docs\Guides\git\git-basic-operation.md
 * [Git](https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/docs/Guides/git/git-basic-operation.md)
 
-## WeChat Official Accounts
+## WeChat Official Accounts and 
 <div align="center">
 	<img src="https://github.com/wencaixu/Java-Core-Algorithm/blob/master/src/main/java/com/tools/profile.jpg" width="200px" height="200px">
 </div>
+
+#### 有事儿您Q我！！欢迎提ISSUES
+<!--<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=710201236&amp;site=qq&amp;menu=yes">
+    <img border="0" src="http://wpa.qq.com/pa?p=1:710201236:13" alt="有事您Q我" title="有事您Q我">
+</a>-->
+ <p align="center">
+     <img src="https://github.com/wencaixu/QR-Generator/blob/master/qr/gif_qrcode.gif" 
+     height=200px
+     width=200px
+     alt="撩一下我，坏笑">
+ </p>
+
 
