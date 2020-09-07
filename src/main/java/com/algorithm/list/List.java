@@ -8,7 +8,7 @@ public interface List {
 
     void delete(int index) throws Exception;
 
-    Object get(int index) ;
+    Object get(int index) throws Exception;
 
     boolean isEmpty();
 
