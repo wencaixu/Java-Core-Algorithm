@@ -1,78 +1,111 @@
 package com.algorithm.list;
 
+public class DoubleLinkedList implements List{
 
-class DoubleNode<T> {
-    T date;
-    DoubleNode previous;
-    DoubleNode next;
-}
+    /**
+     * 链表长度
+     */
+    private int size;
 
-public class DoubleLinkedList {
+    /**
+     * 头指针
+     */
+    private DoubleListNode head;
 
-    private static DoubleNode header;
+    /**
+     * 当前指针
+     */
+    private DoubleListNode current;
 
-    private static int length = 0;
 
-    private DoubleNode init() {
-        header = new DoubleNode();
-        header.date = 0;
-        header.previous = null;
-        header.next = null;
-        return header;
+    public DoubleLinkedList() {
+        this.head = current = new DoubleListNode(null);
+        // 初始长度为0
+        this.size = 0;
+        // 头节点的前趋和后继都指向头节点
+        this.head.next = head;
+        this.head.prior = head;
     }
 
-    private int size(DoubleNode node) {
-       return length;
+    @Override
+    public int size() {
+        return this.size;
     }
 
-    private void insert(int index, int date) {
-        int i = 0;
-        DoubleNode preNode = header;
-        while (preNode != null && i < index - 1) {
-           ++i;
-           preNode = preNode.next;
+    /**
+     * 定位函数
+     */
+
+    private void index(int index) throws Exception {
+        if(index < -1 || index > size - 1){
+            throw new Exception("参数失败");
         }
-        if(preNode == null || i != index - 1) return;
-        DoubleNode newNode = new DoubleNode();
-        newNode.date = date;
-        if(preNode.next == null){
-            preNode.next = newNode;
-            preNode.previous = preNode;
-            newNode.next = null;
-            ++length;
+        // 头节点
+        if(index == -1){
+            return;
         }
-        DoubleNode nextNode = preNode.next;
-        newNode.next = nextNode;
-        newNode.previous = preNode;
-        preNode.next = newNode;
-        nextNode.previous = newNode;
-        ++length;
+        int j = 0;
+        current = head.next;
+        while(current != head && j < index){
+            current = current.next;
+            j++;
+        }
     }
 
-    public void delete(int index) {
-        if(index < 0 || index >= length) return;
-        int i = 0;
-        DoubleNode curNode = header;
-        while(curNode != null && i != index){
-            ++ i;
-            curNode = curNode.next;
+    @Override
+    public void insert(int index, Object value) throws Exception {
+        if(index < 0 || index > size){
+            throw new Exception("参数错误");
         }
-        if(i != index || curNode == null) return;
-        if(curNode.next == null){
-            curNode.previous.next = null;
-            curNode = null;
-        }
-        if(curNode.next!= null){
-            curNode.previous.next = curNode.next;
-            curNode.next.previous = curNode.previous;
-        }
-        --length;
+        index(index - 1);
+        current.setNext(new DoubleListNode(value,current.next));
+        current.next.setPrior(current);
+        current.next.next.setPrior(current.next);
+        size ++;
     }
 
-    public static void main(String[] args) {
-       DoubleLinkedList linkedList = new DoubleLinkedList();
-       linkedList.init();
-       linkedList.insert(1,2);
-       //linkedList.tranverse();
+    @Override
+    public void delete(int index) throws Exception {
+        if(isEmpty()){
+            throw new Exception("链表为空，无法删除");
+        }
+        if(index < 0 || index > size){
+            throw new Exception("参数错误");
+        }
+        index(index - 1);
+        current.setNext(current.next.next);
+        current.next.setPrior(current);
+        size --;
+    }
+
+    @Override
+    public Object get(int index) throws Exception {
+        if(index < 0 || index > size - 1){
+            throw new Exception("参数失败");
+        }
+        index(index);
+        return current.element;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return this.size == 0;
+    }
+
+    public static void main(String[] args) throws Exception {
+        // TODO Auto-generated method stub
+        DoubleLinkedList list = new DoubleLinkedList();
+        for(int i=0;i<10;i++)
+        {
+            int temp = ((int)(Math.random()*100))%100;
+            list.insert(i, temp);
+            System.out.print(temp+" ");
+        }
+        list.delete(4);
+        System.out.println("\n------删除第五个元素之后-------");
+        for(int i=0;i<list.size;i++)
+        {
+            System.out.print(list.get(i)+" ");
+        }
     }
 }
