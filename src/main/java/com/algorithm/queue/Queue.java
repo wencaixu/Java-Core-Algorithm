@@ -9,5 +9,4 @@ public interface Queue {
     boolean isEmpty();
 
     Object getFront() throws Exception;
-
 }
