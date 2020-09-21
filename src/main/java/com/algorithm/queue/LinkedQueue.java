@@ -10,20 +10,29 @@ public class LinkedQueue implements Queue {
 
     public LinkedQueue() {
         this.count = 0;
-        this.rear = this.front = new QueueNode(null);
+        this.rear = this.front = null;
     }
 
     @Override
-    public void append(Object element) throws Exception {
-        this.rear.setNext(new QueueNode(element,null));
-        this.count ++;
+    public void append(Object element) throws Exception{
+        QueueNode node = new QueueNode(element,null);
+        if(rear != null){
+            rear.next = node;
+        }
+        rear = node;
+        if(front == null){
+            front = node;
+        }
+        count ++;
     }
 
     @Override
     public Object delete() throws Exception {
-
+        if(isEmpty()){
+            throw new Exception("队列为空");
+        }
         Object object = front.element;
-        this.front.setNext(front.next.next);
+        this.front = front.next;
         this.count --;
         return object;
     }
@@ -39,6 +48,23 @@ public class LinkedQueue implements Queue {
             return this.front.getElement();
         }else{
             return null;
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        LinkedQueue queue = new LinkedQueue();
+        queue.append("aa");
+        queue.append("bb");
+        queue.append("cc");
+        queue.append("dd");
+        queue.append("ee");
+
+        queue.delete();
+
+        queue.append("ff");
+
+        while(!queue.isEmpty()){
+            System.out.println(queue.delete());
         }
     }
 }
