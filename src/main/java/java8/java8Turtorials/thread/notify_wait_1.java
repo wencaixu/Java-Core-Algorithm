@@ -10,7 +10,7 @@ package java8.java8Turtorials.thread;/**
 
 
 
-public class PrintNotifyWait{
+public class notify_wait_1 {
 
     private static Object o = new Object();
 
